@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Josefin+Sans:ital,wght@1,600&family=Oswald:wght@300&display=swap');
+
+
+body {
+    background-color: #48494B;
+
+}
+
+h1 {
+    margin-left: 10%;
+    color: lightgray;
+    font-family: Josefin Sans;
+}
+
+p {
+    font-family: Josefin Sans;
+    text-align: left;
+    margin-left: 23%;
+    color: white;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+div {
+    position: absolute;
+    bottom: 0;
+    margin-left: 5%;
+    margin-bottom: 3%;
+   
+}

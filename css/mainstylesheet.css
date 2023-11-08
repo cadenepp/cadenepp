@@ -12,24 +12,25 @@ h1 {
     font-family: Josefin Sans;
 }
 
-p {
+pre {
     font-family: Josefin Sans;
     text-align: left;
-    margin-left: 23%;
     color: white;
     font-size: 18px;
+    padding: 3%;
+    line-height: 40px;
 }
 
 a {
     text-decoration: none;
-    color: blue;
+    color: whitesmoke;
     font-family: Josefin Sans;
     font-size: 20px;
     
 }
 
 a:hover {
-    color: whitesmoke;
+    color: #0000FF;
 }
 
 div {
@@ -39,3 +40,4 @@ div {
     margin-bottom: 3%;
    
 }
+

@@ -1,0 +1,8 @@
+<script setup>
+import BackButton from '../components/BackButton.vue'
+</script>
+
+<template>
+    <back-button />
+    <h1>Resume</h1>
+</template>

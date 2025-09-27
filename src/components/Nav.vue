@@ -21,7 +21,7 @@
         <RouterLink
             v-for="(item) in paths"
             :to="{name: item.name}"
-            class="my-[25px] w-fit transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+            class="my-[25px] w-fit hover:transition hover:delay-50 hover:duration-400 hover:ease-in-out hover:-translate-y-1 hover:scale-115"
         >
         {{ item.tag }}
         </RouterLink>

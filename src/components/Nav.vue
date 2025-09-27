@@ -1,6 +1,15 @@
 
 
 <script setup>
+
+    const paths = [
+        {name: "projects", tag: "Projects"},
+        {name: "skills", tag: "Skills"},
+        {name: "resume", tag: "Resume"},
+        {name: "personal", tag: "Personal"},
+        {name: "contact", tag: "Contact"}
+    ]
+
 </script>
 
 
@@ -8,12 +17,18 @@
 <template>
 
     <div class="flex flex-col text-6xl" >
-        <RouterLink :to="{name: 'projects'}" class="my-[25px] w-fit" >Projects</RouterLink>
-        <RouterLink :to="{name: 'skills'}" class="my-[25px] w-fit">Skills</RouterLink>
-        <RouterLink :to="{name: 'resume'}" class="my-[25px] w-fit">Resume</RouterLink>
-        <RouterLink :to="{name: 'personal'}" class="my-[25px] w-fit">Personal</RouterLink>
-        <RouterLink :to="{name: 'contact'}" class="my-[25px] w-fit">Contact</RouterLink>
+
+        <RouterLink
+            v-for="(item) in paths"
+            :to="{name: item.name}"
+            class="my-[25px] w-fit transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+        >
+        {{ item.tag }}
+        </RouterLink>
+    
     </div>
+
+    
 
     
 

@@ -9,7 +9,7 @@ import Socials from '../components/Socials.vue'
 
         <h1 class=" text-9xl mt-[140px] ml-[50px]" >Caden Epp</h1>
 
-        <div class="ml-[75px] mt-[15px]" >
+        <div class="ml-[75px] mt-[25px]" >
             <socials />
         </div>
 

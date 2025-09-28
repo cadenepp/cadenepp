@@ -17,7 +17,7 @@ import BackButton from '../components/BackButton.vue'
     
 
 
-    <div class="ml-[150px] w-1/2">
+    <div class="ml-[150px] mb-[200px] w-1/2">
         <div class=" transition delay-25 hover:transition hover:delay-25 hover:duration-300 hover:ease-in-out hover:-translate-y-1 hover:scale-105">
             <h2 class="text-4xl mt-[30px]">Front</h2>
             <a href="/resume.pdf">

@@ -1,5 +1,6 @@
 <script setup>
 import BackButton from '../components/BackButton.vue'
+import AllProjects from '../components/AllProjects.vue';
 </script>
 
 
@@ -9,4 +10,10 @@ import BackButton from '../components/BackButton.vue'
     </div>
 
     <h1 class="text-8xl mt-[50px] ml-[100px]">Projects</h1>
+
+    <div 
+        class="ml-[120px] mt-[70px]"
+    >
+        <AllProjects />
+    </div>
 </template>

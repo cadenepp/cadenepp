@@ -1,5 +1,6 @@
 <script setup>
 import BackButton from '../components/BackButton.vue'
+import AllPersonals from '../components/AllPersonals.vue';
 </script>
 
 <template>
@@ -9,4 +10,9 @@ import BackButton from '../components/BackButton.vue'
     </div>
 
     <h1 class="text-8xl mt-[50px] ml-[100px]">Personal</h1>
+
+    <div class="ml-[130px]">
+        <AllPersonals />
+    </div>
+
 </template>

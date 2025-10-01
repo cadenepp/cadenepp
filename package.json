@@ -9,7 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.18"
+    "@radix-ui/react-switch": "^1.2.6",
+    "@tailwindcss/vite": "^4.1.13",
+    "dark-mode-toggle": "^0.17.0",
+    "lucide-vue-next": "^0.544.0",
+    "radix-vue": "^1.9.17",
+    "tailwindcss": "^4.1.13",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",

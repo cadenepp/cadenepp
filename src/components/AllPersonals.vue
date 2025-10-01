@@ -17,7 +17,7 @@
 
     <div 
         v-for="(item) in sections"
-        class="my-[85px] max-w-[500px]"
+        class="max-md:w-[90%] max-md:flex flex-col justify-center my-[55px] md:my-[85px] max-w-[500px]"
     >
         <h2 class="text-5xl my-[15px]">
             {{ item.title }}

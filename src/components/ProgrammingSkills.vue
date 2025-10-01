@@ -24,7 +24,7 @@
 
 <template>
 
-    <ul class="list-disc ml-[150px]">
+    <ul class="list-disc ml-[32%] flex flex-col md:ml-[150px]">
         <li
             v-for="(item, index) in skills"
             :key="index"

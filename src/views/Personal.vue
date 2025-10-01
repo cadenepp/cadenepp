@@ -5,13 +5,13 @@ import AllPersonals from '../components/AllPersonals.vue';
 
 <template>
 
-    <div class="mt-[25px] ml-[25px]">
+    <div class="mt-[25px] ml-[15px] md:ml-[25px]">
         <back-button />
     </div>
 
-    <h1 class="text-8xl mt-[50px] ml-[100px]">Personal</h1>
+    <h1 class="text-6xl md:text-8xl mt-[25px] md:mt-[50px] text-center md:text-start md:ml-[100px]">Personal</h1>
 
-    <div class="ml-[130px]">
+    <div class="max-md:flex flex-col items-center md:ml-[130px]">
         <AllPersonals />
     </div>
 

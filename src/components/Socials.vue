@@ -19,13 +19,13 @@
 
 <template>
 
-    <div class="flex flex-row">
+    <div class="flex flex-row justify-center md:justify-start">
         <a 
             v-for="(item, index) in socialObjects" 
             :key="index"
             :href="item.linkURL" 
             target="_blank"
-            class="bg-contain bg-no-repeat bg-center w-[50px] h-[50px] mx-[12px] hover:transition hover:delay-50 hover:duration-300 hover:ease-in-out hover:-translate-y-1 hover:scale-110"
+            class="bg-contain bg-no-repeat bg-center w-[35px] h-[35px] lg:w-[50px] lg:h-[50px] mx-[12px] hover:transition hover:delay-50 hover:duration-300 hover:ease-in-out hover:-translate-y-1 hover:scale-110"
             :style="{ backgroundImage: hovered === index ? `url(${item.hoverURL})` : `url(${item.mainURL})` }"
             @mouseenter="hovered = index"
             @mouseleave="hovered = null"

@@ -3,6 +3,7 @@
 <script setup>
 
 import Home from './views/Home.vue'
+import RightSide from './components/RightSide.vue'
 
 
 </script>
@@ -11,7 +12,9 @@ import Home from './views/Home.vue'
 <!-- Content App Side (Left) -->
 <template>
 
+ 
     <RouterView />
-  
+
+
 </template>
 

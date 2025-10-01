@@ -44,7 +44,7 @@
 <template>
 
     <div v-for="(item) in projectDetails"
-        class=" min-h-[400px] max-w-[450px] border-1 border-white my-[25px] flex flex-col justify-between"
+        class=" min-h-[400px] max-w-[90%] md:max-w-[450px] border-1 border-white my-[25px] flex flex-col justify-between"
     >
         <div>
             <h2 class="text-4xl m-[15px]" > {{ item.title }}</h2>

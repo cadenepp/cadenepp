@@ -16,7 +16,7 @@ const skills = [
 
 <template>
 
-    <ul class="list-disc ml-[150px] mb-[100px]">
+    <ul class="list-disc ml-[32%] md:ml-[150px] mb-[100px]">
         <li
             v-for="(item, index) in skills"
             :key="index"

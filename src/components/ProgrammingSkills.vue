@@ -1,6 +1,8 @@
 
 <script setup>
 
+    import { onMounted } from 'vue'
+
     const skills = [
         {name: "HTML", image: "/Images/Icons/Skills/icons8-html5.svg"},
         {name: "CSS", image: "/Images/Icons/Skills/icons8-css3.svg"},
@@ -19,16 +21,34 @@
         {name: "Docker", image: "/Images/Icons/Skills/icons8-docker.svg"},
     ]
 
+    onMounted(() => {
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('showOnScroll')
+                } else {
+                    entry.target.classList.remove('showOnScroll')
+                }
+            })
+        })
+
+        const hiddenElements = document.querySelectorAll('.hiddenOnScroll')
+
+        hiddenElements.forEach((el) => observer.observe(el))
+    })
+
+
 </script>
 
 
 <template>
 
-    <ul class="list-disc ml-[32%] flex flex-col md:ml-[150px]">
+    <ul class="intro-p-skills list-disc ml-[32%] flex flex-col md:ml-[150px]">
         <li
             v-for="(item, index) in skills"
             :key="index"
-            class=""
+            class="hiddenOnScroll"
         >
             <div class="ml-[25px] flex flex-row items-center my-[10px]">
                 <p class="text-2xl mr-[5px]">{{ item.name }}</p>
@@ -44,3 +64,21 @@
 
 
 </template>
+
+
+
+
+<style scoped>
+
+    .hiddenOnScroll {
+        opacity: 0;
+        transform: translateX(-120px) scale(0.9);
+        transition: all 0.8s 0.3s ease;
+    }
+
+    .showOnScroll {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+
+</style>

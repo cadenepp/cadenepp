@@ -9,7 +9,7 @@ import AllPersonals from '../components/AllPersonals.vue';
         <back-button />
     </div>
 
-    <h1 class="text-6xl md:text-8xl mt-[25px] md:mt-[50px] text-center md:text-start md:ml-[100px]">Personal</h1>
+    <h1 class="intro-h1 text-6xl md:text-8xl mt-[25px] md:mt-[50px] text-center md:text-start md:ml-[100px]">Personal</h1>
 
     <div class="max-md:flex flex-col items-center md:ml-[130px]">
         <AllPersonals />

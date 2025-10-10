@@ -17,10 +17,6 @@ import Socials from '../components/Socials.vue'
             <Nav />
         </div>
 
-
-
-
-
     </div>
 
 

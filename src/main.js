@@ -1,10 +1,8 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import RightSide from './components/RightSide.vue'
 import router from './plugins/router'
 
 createApp(App).use(router).mount('#app')
-createApp(RightSide).mount('#fixed-side')
 
 

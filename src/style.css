@@ -9,3 +9,5 @@ html, body {
 @theme {
     --font-jost: "Jost", sans-serif;
 }
+
+@custom-variant theme-light (&:where([data-theme="light"] *));

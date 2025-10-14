@@ -2,11 +2,11 @@
 import { ref, onMounted } from 'vue'
 import ToggleTheme from './ToggleTheme.vue'
 
-const imageSrc = ref('/Images/maskWhite.png')
+const imageSrc = ref('/Images/masks/maskWhite.png')
 
 const updateThemeImage = () => {
   const isLightMode = document.documentElement.getAttribute('data-theme') === 'light'
-  imageSrc.value = isLightMode ? '/Images/maskWhite.png' : '/Images/maskBlack.png'
+  imageSrc.value = isLightMode ? '/Images/masks/maskWhite.png' : '/Images/masks/maskBlack.png'
 }
 
 onMounted(() => {

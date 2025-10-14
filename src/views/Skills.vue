@@ -2,6 +2,7 @@
 import BackButton from '../components/BackButton.vue'
 import ProgrammingSkills from '../components/ProgrammingSkills.vue';
 import OtherSkills from '../components/OtherSkills.vue';
+import Certifications from '../components/Certifications.vue';
 </script>
 
 <template>
@@ -16,6 +17,9 @@ import OtherSkills from '../components/OtherSkills.vue';
 
     <h2 class="intro-h2-2 text-4xl text-center md:text-start md:ml-[115px] mt-[45px] mb-[20px]">Other</h2>
     <OtherSkills />
+
+    <h2 class="intro-h2-3 text-4xl text-center md:text-start md:ml-[115px] mt-[45px] mb-[20px]">Certifications</h2>
+    <Certifications />
 </template>
 
 
@@ -28,6 +32,11 @@ import OtherSkills from '../components/OtherSkills.vue';
     }
 
     .intro-h2-2 {
+        animation: fadeIn 0.8s 0.2s backwards;
+
+    }
+
+    .intro-h2-3 {
         animation: fadeIn 0.8s 0.2s backwards;
 
     }

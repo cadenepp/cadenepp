@@ -1,5 +1,26 @@
 <script setup>
-import ToggleTheme from './ToggleTheme.vue';
+import { ref, onMounted } from 'vue'
+import ToggleTheme from './ToggleTheme.vue'
+
+const imageSrc = ref('/Images/maskWhite.png')
+
+const updateThemeImage = () => {
+  const isLightMode = document.documentElement.getAttribute('data-theme') === 'light'
+  imageSrc.value = isLightMode ? '/Images/maskWhite.PNG' : '/Images/maskBlack.png'
+}
+
+onMounted(() => {
+
+  updateThemeImage()
+  
+  const observer = new MutationObserver(updateThemeImage)
+
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme'],
+  })
+
+})
 </script>
 
 <!-- Fixed Right Side -->
@@ -13,7 +34,7 @@ import ToggleTheme from './ToggleTheme.vue';
 
         <div id="image-container" class="top-1/2 flex justify-center" >
           <img 
-            src="/Images/maskBlack.png" 
+            :src="imageSrc"
             alt="Mask Image"
             class=" rounded-full w-1/2 bg-blue"
           >

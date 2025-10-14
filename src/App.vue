@@ -13,7 +13,7 @@ import RightSide from './components/RightSide.vue';
 
      <SplashScreen />
 
-    <section class="w-full flex flex-row min-h-screen text-[#F2F2F2] font-jost ">
+    <section class="w-full flex flex-row min-h-screen text-[#F2F2F2] font-jost theme-light:text-[#121212]">
 
         <!-- Content App Side (Left) -->
         <section class="w-full md:w-1/2">

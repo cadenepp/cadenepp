@@ -1,5 +1,33 @@
 <script setup>
-import BackButton from '../components/BackButton.vue'
+    import BackButton from '../components/BackButton.vue'
+
+    import { ref, onMounted } from 'vue'
+
+    const imageSrc = ref('/Images/Icons/Email/icons8-email-50-black.png')
+
+
+    const updateThemeImage = () => {
+
+        const isLightMode = document.documentElement.getAttribute('data-theme') === 'light'
+
+        imageSrc.value = isLightMode ? '/Images/Icons/Email/icons8-email-50-black.png' : '/Images/Icons/Email/icons8-email-50-white.png'
+
+    }
+
+
+    onMounted(() => {
+
+        updateThemeImage()
+        
+        const observer = new MutationObserver(updateThemeImage)
+
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['data-theme'],
+        })
+
+    })
+
 </script>
 
 <template>
@@ -11,7 +39,7 @@ import BackButton from '../components/BackButton.vue'
 
     <div class="intro-mailto max-md:flex justify-center">
         <a href="mailto:dev@cadenepp.com" class="inline-block md:ml-[140px] hover:transition hover:delay-25 hover:duration-300 hover:ease-in-out hover:-translate-y-1 hover:scale-110">
-            <img src="/Images/Icons/Email/icons8-email-50-white.png" alt="Email Me Icon">
+            <img :src="imageSrc" alt="Email Me Icon">
         </a>
     </div>
 

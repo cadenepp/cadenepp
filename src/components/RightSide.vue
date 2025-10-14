@@ -6,7 +6,7 @@ const imageSrc = ref('/Images/maskWhite.png')
 
 const updateThemeImage = () => {
   const isLightMode = document.documentElement.getAttribute('data-theme') === 'light'
-  imageSrc.value = isLightMode ? '/Images/maskWhite.PNG' : '/Images/maskBlack.png'
+  imageSrc.value = isLightMode ? '/Images/maskWhite.png' : '/Images/maskBlack.png'
 }
 
 onMounted(() => {

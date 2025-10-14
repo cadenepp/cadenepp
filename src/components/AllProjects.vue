@@ -32,22 +32,23 @@
 
 
     const projectDetails = [
-        {title: "Project 1", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin  consectetur semper diam, non convallis lacus. Morbi accumsan, est ac  porta eleifend, lectus urna luctus massa, a gravida mi libero auctor  nunc. Sed lacinia purus eu dui sagittis, eu porta eros elementum. Ut  iaculis libero vitae dui cursus lobortis. Suspendisse vel.", id: 1},
-        {title: "Unit 2 Project 1", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin  consectetur semper diam, non convallis lacus. Morbi accumsan, est ac  porta eleifend, lectus urna luctus massa, a gravida mi libero auctor  nunc. Sed lacinia purus eu dui sagittis, eu porta eros elementum. Ut  iaculis libero vitae dui cursus lobortis. Suspendisse vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin  consectetur semper diam, non convallis lacus. Morbi accumsan, est ac  porta eleifend, lectus urna luctus massa, a gravida mi libero auctor  nunc. Sed lacinia purus eu dui sagittis, eu porta eros elementum. Ut  iaculis libero vitae dui cursus lobortis. Suspendisse vel. ", id: 2},
-        {title: "Unit 2 Project 4 Exercise 3", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin  consectetur semper diam, non convallis lacus. Morbi accumsan.", id: 3}
+        {title: "GMA Medical", desc: "This project was developed during my internship at GMA Medical. The goal was to design and build a modern, responsive website to showcase GMA Medical’s products, provide search and browsing capabilities for customers, and give administrators the ability to manage catalog content.", id: 1},
+        {title: "IHCC CSD Club Website", desc: "The Computer Software Development Club Website is a collaborative project designed to showcase the club’s mission, events, and member projects through a modern, responsive interface. Built with Next.js (TypeScript) and Tailwind CSS, and hosted on Vercel, the site emphasizes clean design, usability, and efficient performance while reflecting the collaborative spirit and technical focus of the club.", id: 2},
+        {title: "Underground Barbell", desc: "Underground Barbell is a front-end web project built with Next.js and Tailwind CSS, featuring a clean, single-page layout focused on modern design and intuitive UI/UX. Inspired by a gym that lacked an online presence, this project was created collaboratively with a fellow developer to provide the gym with a professional, user-friendly website that reflects its brand and community. The design emphasizes bold visuals, smooth navigation, and responsive performance across all devices.", id: 3}
     ]
 
     const project1 = [
-        {url: "https://github.com/", image: gitHubURL},
-        {url: "https://cadenepp.com", image: urlURL}
+        {url: "https://github.com/GMAMedical/GMAMedicalWebsite", image: gitHubURL},
+        {url: "https://www.gmamedical.com", image: urlURL}
     ]
 
     const project2 = [
-        {url: "https://github.com/", image: gitHubURL},
+        {url: "https://github.com/sorrymint/ihcc-csd", image: gitHubURL},
+        {url: "https://ihcc-csd.vercel.app/", image: urlURL}
     ]
 
     const project3 = [
-        {url: "https://cadenepp.com", image: urlURL}
+        {url: "https://github.com/Underground-Barbell", image: gitHubURL}
     ]
 
     const whichArray = (id) => {

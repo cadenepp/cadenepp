@@ -4,6 +4,7 @@
 
 import SplashScreen from './components/SlideShow.vue';
 import RightSide from './components/RightSide.vue';
+import ToggleTheme from './components/ToggleTheme.vue';
 
 
 </script>
@@ -17,6 +18,10 @@ import RightSide from './components/RightSide.vue';
 
         <!-- Content App Side (Left) -->
         <section class="w-full md:w-1/2">
+
+            <div class="md:hidden flex justify-end mr-[15px] mt-[50px]">
+                <ToggleTheme/>
+            </div>
 
             <RouterView />
 

@@ -28,6 +28,7 @@
         {name: "SQL", image: "/Images/Icons/Skills/icons8-sql-48.png"},
         {name: "MongoDB", image: "/Images/Icons/Skills/icons8-mongodb.svg"},
         {name: "AWS", image: "/Images/Icons/Skills/icons8-aws.svg"},
+        {name: "Azure", image: "/Images/Icons/Skills/icons8-azure-48.png"}
 
     ]
 

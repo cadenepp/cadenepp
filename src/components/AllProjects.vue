@@ -32,11 +32,17 @@
 
 
     const projectDetails = [
+        {title: "All Projects", desc: "Repo of different projects i've worked on for all types of languages, stacks, design patterns, and anything else i've wanted to test or play around with. Welcome to my repo of \"Testing the Waters\" … ", id: 6},
         {title: "GMA Medical", desc: "This project was developed during my internship at GMA Medical. The goal was to design and build a modern, responsive website to showcase GMA Medical’s products, provide search and browsing capabilities for customers, and give administrators the ability to manage catalog content.", id: 1},
         {title: "IHCC CSD Club Website", desc: "The Computer Software Development Club Website is a collaborative project designed to showcase the club’s mission, events, and member projects through a modern, responsive interface. Built with Next.js (TypeScript) and Tailwind CSS, and hosted on Vercel, the site emphasizes clean design, usability, and efficient performance while reflecting the collaborative spirit and technical focus of the club.", id: 2},
         {title: "Underground Barbell", desc: "Underground Barbell is a front-end web project built with Next.js and Tailwind CSS, featuring a clean, single-page layout focused on modern design and intuitive UI/UX. Inspired by a gym that lacked an online presence, this project was created collaboratively with a fellow developer to provide the gym with a professional, user-friendly website that reflects its brand and community. The design emphasizes bold visuals, smooth navigation, and responsive performance across all devices.", id: 3},
-        {title: "AI Random SideQuest", desc: "AI Random SideQuest is an interactive, choice-based adventure game that dynamically generates story paths and outcomes using AI-driven logic. Built with Next.js, TypeScript, Tailwind CSS, and a Spring Boot backend, the game allows players to customize their characters, make impactful decisions, and see how long they can survive through an evolving narrative. It features real-time progression tracking, session-based saving, and a live leaderboard powered by a connected API. The project was recognized with the Students' Choice Award at ByteJam 2025, highlighting its creativity, technical polish, and engaging player experience.", id: 4}
+        {title: "AI Random SideQuest", desc: "AI Random SideQuest is an interactive, choice-based adventure game that dynamically generates story paths and outcomes using AI-driven logic. Built with Next.js, TypeScript, Tailwind CSS, and a Spring Boot backend, the game allows players to customize their characters, make impactful decisions, and see how long they can survive through an evolving narrative. It features real-time progression tracking, session-based saving, and a live leaderboard powered by a connected API. The project was recognized with the Students' Choice Award at ByteJam 2025, highlighting its creativity, technical polish, and engaging player experience.", id: 4},
+        {title: "OpenTradeApp", desc: "Playing around with different tech stacks on trading centered/related projects.", id: 5},
 
+    ]
+
+    const allProjects = [
+        {url: "https://github.com/cadenepp/projects", image: gitHubURL}
     ]
 
     const project1 = [
@@ -50,11 +56,16 @@
     ]
 
     const project3 = [
-        {url: "https://github.com/Underground-Barbell", image: gitHubURL}
+        {url: "https://github.com/Underground-Barbell", image: gitHubURL},
+        {url: "https://ugbb-website.vercel.app/", image: urlURL}
     ]
 
     const project4 = [
         {url: "https://github.com/cadenepp/SideQuestByteJam25", image: gitHubURL}
+    ]
+
+    const project5 = [
+      {url: "https://github.com/cadenepp/OpenTradeApp", image: gitHubURL}
     ]
 
     const whichArray = (id) => {
@@ -67,6 +78,10 @@
                 return project3
             case 4:
                 return project4
+            case 5:
+                return project4
+            case 6:
+                return allProjects
             default:
                 return project1
         }

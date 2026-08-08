@@ -12,11 +12,15 @@
         {name: "React.js", image: "/Images/Icons/Skills/icons8-react.svg"},
         {name: "Node.js", image: "/Images/Icons/Skills/icons8-node-js.svg"},
         {name: "C#", image: "/Images/Icons/Skills/icons8-c.svg"},
+        {name: "C", image: "/Images/Icons/Skills/icons8-c-programming.svg"},
+        {name: "C++", image: "/Images/Icons/Skills/icons8-c++.svg"},
         {name: "Java", image: "/Images/Icons/Skills/icons8-java.svg"},
         {name: "Spring Boot", image: "/Images/Icons/Skills/icons8-spring-boot.svg"},
         {name: "Kafka", image: "/Images/Icons/Skills/icons8-apache-kafka.svg"},
         {name: "PHP", image: "/Images/Icons/Skills/icons8-php.svg"},
         {name: "git", image: "/Images/Icons/Skills/icons8-git.svg"},
+        {name: "YAML", image: "/Images/Icons/Skills/icons8-yaml.svg"},
+        {name: "Terraform", image: "/Images/Icons/Skills/icons8-terraform.svg"},
         {name: "Python", image: "/Images/Icons/Skills/icons8-python.svg"},
         {name: "Docker", image: "/Images/Icons/Skills/icons8-docker.svg"},
         {name: "COBOL", image: "/Images/Icons/Skills/cobol.png"},
@@ -26,9 +30,11 @@
         {name: "Kotlin", image: "/Images/Icons/Skills/icons8-kotlin.svg"},
         {name: "MySQL", image: "/Images/Icons/Skills/icons8-my-sql.svg"},
         {name: "SQL", image: "/Images/Icons/Skills/icons8-sql-48.png"},
+        {name: "Postgres", image: "/Images/Icons/Skills/icons8-postgres.svg"},
         {name: "MongoDB", image: "/Images/Icons/Skills/icons8-mongodb.svg"},
         {name: "AWS", image: "/Images/Icons/Skills/icons8-aws.svg"},
-        {name: "Azure", image: "/Images/Icons/Skills/icons8-azure-48.png"}
+        {name: "Azure", image: "/Images/Icons/Skills/icons8-azure-48.png"},
+        {name: "Claude Code", image: "/Images/Icons/Skills/icons8-clawd.svg"},
 
     ]
 

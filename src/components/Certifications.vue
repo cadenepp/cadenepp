@@ -6,6 +6,7 @@
 
     const cert = [
         {name: "AWS Certified Cloud Practitioner", date: "April 2025"},
+        {name: "Azure Fundaments - MS Certified", date: "August 2026"},
     ]
 
     onMounted(() => {

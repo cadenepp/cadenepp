@@ -2,29 +2,16 @@
 
 <script setup>
 
-    import { onMounted } from 'vue'
+    import { ref } from 'vue'
+    import { useScrollReveal } from '../composables/scrollReveal'
 
     const cert = [
         {name: "AWS Certified Cloud Practitioner", date: "April 2025"},
         {name: "Azure Fundaments - MS Certified", date: "August 2026"},
     ]
 
-    onMounted(() => {
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('showOnScroll')
-                } else {
-                    entry.target.classList.remove('showOnScroll')
-                }
-            })
-        })
-
-        const hiddenElements = document.querySelectorAll('.hiddenOnScroll')
-
-        hiddenElements.forEach((el) => observer.observe(el))
-    })
+    const revealEls = ref([])
+    useScrollReveal(revealEls)
 
 </script>
 
@@ -36,6 +23,7 @@
         <li
             v-for="(item, index) in cert"
             :key="index"
+            ref="revealEls"
             class="hiddenOnScroll"
         >
             <div class="ml-[25px] flex flex-row items-center my-[10px]">

@@ -3,6 +3,7 @@
 <script setup>
 
     import { onMounted, ref } from 'vue'
+    import { useScrollReveal } from '../composables/scrollReveal'
 
     const gitHubURL = ref('/Images/Icons/GitHub/icons8-github-Black.svg')
     const urlURL = ref('/Images/Icons/URL/icons8-url-50-black.png')
@@ -87,22 +88,8 @@
         }
     }
 
-    onMounted(() => {
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('showOnScroll')
-                } else {
-                    entry.target.classList.remove('showOnScroll')
-                }
-            })
-        })
-
-        const hiddenElements = document.querySelectorAll('.hiddenOnScroll')
-
-        hiddenElements.forEach((el) => observer.observe(el))
-    })
+    const revealEls = ref([])
+    useScrollReveal(revealEls)
 
 
 </script>
@@ -112,6 +99,7 @@
 <template>
 
     <div v-for="(item) in projectDetails"
+        ref="revealEls"
         class="intro-projects hiddenOnScroll min-h-[400px] max-w-[90%] md:max-w-[450px] border-1 border-white theme-light:border-black my-[25px] flex flex-col justify-between"
     >
         <div>

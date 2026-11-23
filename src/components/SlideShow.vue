@@ -1,5 +1,6 @@
 <script setup>
   import { ref, onMounted } from 'vue'
+  import { markIntroDone } from '../composables/intro'
 
   const slides = ["Hello", "I build", "I am"]
   const currentText = ref(slides[0])
@@ -49,7 +50,7 @@
 </script>
 
 <template>
-  <transition name="fade">
+  <transition name="fade" @after-leave="markIntroDone">
     <div
       v-if="visible"
       class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#121212] text-[#F2F2F2]"

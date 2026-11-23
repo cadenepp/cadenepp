@@ -2,7 +2,8 @@
 
 <script setup>
 
-    import { onMounted } from 'vue'
+    import { ref } from 'vue'
+    import { useScrollReveal } from '../composables/scrollReveal'
 
     const skills = [
         {name: "Microsoft 365"},
@@ -13,22 +14,8 @@
 
     ]
 
-    onMounted(() => {
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('showOnScroll')
-                } else {
-                    entry.target.classList.remove('showOnScroll')
-                }
-            })
-        })
-
-        const hiddenElements = document.querySelectorAll('.hiddenOnScroll')
-
-        hiddenElements.forEach((el) => observer.observe(el))
-    })
+    const revealEls = ref([])
+    useScrollReveal(revealEls)
 
 </script>
 
@@ -40,6 +27,7 @@
         <li
             v-for="(item, index) in skills"
             :key="index"
+            ref="revealEls"
             class="hiddenOnScroll"
         >
             <div class="ml-[25px] flex flex-row items-center my-[10px]">

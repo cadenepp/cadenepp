@@ -2,7 +2,8 @@
 
 <script setup>
 
-    import { onMounted } from 'vue'
+    import { ref } from 'vue'
+    import { useScrollReveal } from '../composables/scrollReveal'
 
     const sections = [
         {title: "Me", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin  consectetur semper diam, non convallis lacus. Morbi accumsan, est ac  porta eleifend, lectus urna luctus massa, a gravida mi libero auctor  nunc. Sed lacinia purus eu dui sagittis, eu porta eros elementum. Ut  iaculis libero vitae dui cursus lobortis. Suspendisse vel.", image: "/Images/Personal/IMG_3728.jpg"},
@@ -12,22 +13,8 @@
         {title: "Hobbies", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin  consectetur semper diam, non convallis lacus. Morbi accumsan, est ac  porta eleifend, lectus urna luctus massa, a gravida mi libero auctor  nunc. Sed lacinia purus eu dui sagittis, eu porta eros elementum. Ut  iaculis libero vitae dui cursus lobortis. Suspendisse vel.", image: "/Images/Personal/IMG_3732.jpg"}
     ]
 
-    onMounted(() => {
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('showOnScroll')
-                } else {
-                    entry.target.classList.remove('showOnScroll')
-                }
-            })
-        })
-
-        const hiddenElements = document.querySelectorAll('.hiddenOnScroll')
-
-        hiddenElements.forEach((el) => observer.observe(el))
-    })
+    const revealEls = ref([])
+    useScrollReveal(revealEls)
 
 </script>
 
@@ -36,6 +23,7 @@
 
     <div 
         v-for="(item) in sections"
+        ref="revealEls"
         class="intro-personal hiddenOnScroll max-md:w-[90%] max-md:flex flex-col justify-center my-[55px] md:my-[85px] max-w-[500px]"
     >
         <h2 class="text-5xl my-[15px]">
